@@ -75,6 +75,11 @@ header {
     color: var(--text-color);
     z-index: 10001;
     cursor: pointer;
+
+    position: absolute;
+    top: 100%;
+    right: -200%;
+    /* transition: all .55s ease; */
 }
 .header-icons i {
     margin-right: 25px;
@@ -294,7 +299,7 @@ section {
         top: 100%;
         right: -200%;
         width: 200px;
-        height: 25vh;
+        height: 30vh;
         background: var(--main-color);
         display: flex;
         flex-direction: column;
@@ -322,6 +327,12 @@ section {
 
     .navbar.open {
         right: 2%;
+    }
+
+    #menu-icon {
+        top: 25%;
+        right: 5%;
+        transition: all .55s ease;
     }
 }
 
